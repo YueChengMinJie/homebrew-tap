@@ -116,7 +116,6 @@ class Rocketmq < Formula
       nc -z -w3 localhost 7890
       if [ $? -eq 1 ]
       then
-        echo 11111
         sleep 5
       else
         break
