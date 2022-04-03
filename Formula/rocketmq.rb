@@ -111,8 +111,6 @@ class Rocketmq < Formula
         nohup sh ${ROCKETMQ_HOME}/bin/runserver.sh org.apache.rocketmq.namesrv.NamesrvStartup &
     fi
 
-    sleep 5
-
     sh ${ROCKETMQ_HOME}/bin/runbroker.sh org.apache.rocketmq.broker.BrokerStartup @
   EOS
   end
