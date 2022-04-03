@@ -111,6 +111,18 @@ class Rocketmq < Formula
         nohup sh ${ROCKETMQ_HOME}/bin/runserver.sh org.apache.rocketmq.namesrv.NamesrvStartup &
     fi
 
+    for i in $(seq 1 60)
+    do
+      nc -z -w3 localhost 7890
+      if [ $? -eq 1 ]
+      then
+        echo 11111
+        sleep 5
+      else
+        break
+      fi
+    done
+
     sh ${ROCKETMQ_HOME}/bin/runbroker.sh org.apache.rocketmq.broker.BrokerStartup @
   EOS
   end
