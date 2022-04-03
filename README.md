@@ -6,7 +6,7 @@ This tap is for products in the RocketMQ.
 
 Install the tap via:
 
-    brew tap xujianhai666/tap
+    brew tap YueChengMinJie/tap
 
 Then you can install individual products via:
 
@@ -14,7 +14,7 @@ Then you can install individual products via:
 
 The following products are supported:
 
-* RocketMQ `brew install xujianhai666/tap/rocketmq`
+* RocketMQ `brew install YueChengMinJie/tap/rocketmq`
 
 ## Default Paths for the RocketMQ Formula
 
