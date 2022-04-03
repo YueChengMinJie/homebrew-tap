@@ -122,7 +122,7 @@ class Rocketmq < Formula
       fi
     done
 
-    sh ${ROCKETMQ_HOME}/bin/runbroker.sh org.apache.rocketmq.broker.BrokerStartup @
+    sh ${ROCKETMQ_HOME}/bin/runbroker.sh org.apache.rocketmq.broker.BrokerStartup -n localhost:9876 -c /usr/local/etc/rocketmq/broker.conf autoCreateTopicEnable=true @
   EOS
   end
 
